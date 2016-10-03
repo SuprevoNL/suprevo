@@ -1,0 +1,17 @@
+{
+  "name": "Project starter",
+  "version": "0.0.1",
+  "description": "Template to start a new project with",
+  "main": "index.html",
+  "author": "Marco Brok <marco@suprevo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

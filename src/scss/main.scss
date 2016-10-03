@@ -1,0 +1,54 @@
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+
+// Reset
+@import "base/normalize";
+@import "base/reset";
+
+// Components
+@import "modules/scaffolding";
+@import "modules/grid";
+@import "modules/helpers";
+@import "modules/buttons";
+@import "modules/forms";
+@import "modules/tables";
+@import "modules/navigation";
+@import "modules/layout";
+
+nav {
+    background: #fff;
+    height: 100px;
+    border-bottom: 2px solid #eee;
+}
+
+nav a {
+    padding: 10px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 600px) {
+    nav a {
+        padding: 20px;
+        font-size: .9rem;
+    }
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+footer {
+    font-size: .9rem;
+}
+
+.brand {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+a.brand:hover {
+    text-decoration: none;
+}
