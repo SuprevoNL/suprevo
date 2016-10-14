@@ -9,7 +9,7 @@
 $x-small: 600px;
 $small: 800px;
 $medium: 1000px;
-$large: 1200px;
+$large: 1400px;
 
 // Breakpoints
 $mobile: $x-small;
@@ -21,13 +21,13 @@ $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #404040;
-$font-size: 1rem;
+$font-size: 1.1rem;
 $body-font-size: 1rem;
 $line-height: 1.5;
-$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
 $heading-font-color: #404040;
 $heading-font-weight: 400;
-$heading-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
 $heading-line-height: 1.2;
 $h1: 2.2rem;
 $h2: 1.9rem;
@@ -38,10 +38,12 @@ $h6: 1.1rem;
 
 /* Colors */
 
+$white: #ffffff;
 $background: #ffffff;
-$primary-color: #EA8372;
-$secondary-color: #FFB88C;
+$primary-color: #00b3ff;
+$secondary-color: #4ed444;
 $accent-color: #cdcdcd;
+$header-background: url('https://www.benbhealthcare.nl/wp-content/themes/bbhc/images/header-bg.jpg');
 $alternate-background: #fafafa;
 $link-color: $primary-color;
 $link-hover-color: lighten($link-color, 15%);
@@ -60,18 +62,18 @@ $content-padding-mobile: 30px 0;
 $border-width: 1px;
 $border-style: solid;
 $border-color: #cdcdcd;
-$border-radius: 4px;
+$border-radius: 2px;
 $borders: $border-width $border-style $border-color;
 
 /* Buttons */
 
-$button-background: $primary-color;
+$button-background: $secondary-color;
 $button-background-hover: darken($button-background, 10%);
 $button-color: #ffffff;
 $button-font-weight: 600;
 $button-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 $button-font-size: 1rem;
-$button-border-width: 1px;
+$button-border-width: 3px;
 $button-border-style: solid;
 $button-border-color: $button-background;
 $button-border-radius: $border-radius;
@@ -82,12 +84,12 @@ $accent-button-color: #ffffff;
 $accent-button-color-hover: #ffffff;
 
 // Muted Buttons
-$muted-border: 1px solid $accent-color;
-$muted-border-hover: 1px solid darken($accent-color, 30%);
+$muted-border: 3px solid $white;
+$muted-border-hover: 3px solid darken($white, 10%);
 $muted-background: transparent;
 $muted-background-hover: transparent;
-$muted-color: darken($accent-color, 50%);
-$muted-color-hover: darken($accent-color, 50%);
+$muted-color: $white;
+$muted-color-hover: darken($white, 10%);
 
 // Round Buttons
 $round-buttons: 40px;

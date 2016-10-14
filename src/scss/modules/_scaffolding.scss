@@ -176,6 +176,18 @@ dd {
   max-width: $medium;
 }
 
+// Semi container
+.semi-container {
+  @extend .container;
+  max-width: 1180px;
+}
+
+// Large container
+.large-container {
+  @extend .container;
+  max-width:1600px;
+}
+
 // Content
 .content-section {
   padding: $content-padding-mobile;

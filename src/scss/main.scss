@@ -15,40 +15,285 @@
 @import "modules/tables";
 @import "modules/navigation";
 @import "modules/layout";
+@import "modules/footer";
+
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900';
+
+p {
+    font-size:20px;
+    color:#6d6d6d;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight:400;
+    line-height:36px;
+}
+
+h2 {
+    display:block;
+    font-family: "proxima-nova", sans-serif;
+    color: #22313f;
+    font-size:3.3rem;
+    font-weight:800;
+    line-height:4rem;
+    margin:20px 0 100px;
+}
+
+
 
 nav {
-    background: #fff;
-    height: 100px;
-    border-bottom: 2px solid #eee;
-}
 
-nav a {
-    padding: 10px;
-    line-height: 100px;
-    font-weight: bold;
-    font-size: .8rem;
-}
+    position:relative;
+    height: 90px;
+    border-bottom: 1px solid #394653;
+    line-height:75px;
 
-@media screen and (min-width: 600px) {
-    nav a {
-        padding: 20px;
-        font-size: .9rem;
+    .container {
+        padding:17px 15px;
     }
+
+    a {
+        display: inline-block;
+        color: $white;
+        font-family: "museo-sans-rounded", sans-serif;
+        line-height: 90px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-right: 45px;
+        height: 89px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a.active {
+        border-bottom: 1px solid $white;
+    }
+
+    .menu {
+        margin-top: -16px;
+    }
+
 }
 
-header h1 {
-    font-size: 3rem;
+header {
+    min-height:700px;
+    margin-top:-90px;
+    padding:270px 0 0 0!important;
+    background:#22313f;
+    color: $white;
+
+    h1 {
+        font-family: "proxima-nova", sans-serif;
+        color: $white;
+        font-size: 1.85rem;
+        font-weight:600;
+        margin:0 0 10px 0;
+    }
+
+    span {
+        display:block;
+        font-family: "proxima-nova", sans-serif;
+        color: $white;
+        font-size:4.3rem;
+        font-weight:900;
+        line-height:4.8rem;
+    }
+
+    a {
+        z-index:03;
+        color:#000;
+        display:inline-block;
+    }
+
+    #Layer_1 {
+        position:relative;
+        width:440px;
+        margin-bottom:-220px;
+
+        text {
+            font-size:1.6rem;
+            font-family: "museo-sans-rounded", sans-serif;
+            font-weight:900;
+        }
+
+        .cls-2 {
+            animation: draw 3.5s infinite;
+        }
+
+    }
+
 }
 
-footer {
-    font-size: .9rem;
-}
-
-.brand {
-    font-size: 1.2rem;
-    color: #333;
+.brand img {
+    height:48px;
 }
 
 a.brand:hover {
     text-decoration: none;
+}
+
+.recent-projects {
+
+    .margin-right{
+        padding-right:30px !important;
+    }
+
+    .margin-left {
+        padding-left:30px !important;
+    }
+
+    .recent {
+        height: 320px;
+        margin-bottom: 25px;
+    }
+
+    .recent-big {
+        height:665px;
+    }
+
+    .box-one {
+        background: yellow;
+    }
+
+    .box-two {
+        background: yellowgreen;
+    }
+
+    .box-three {
+        background: greenyellow;
+    }
+
+    .box-four {
+        background: lawngreen;
+    }
+
+}
+
+.about-us {
+
+    ul {
+        padding-left:100px;
+
+        li {
+            list-style: none;
+            padding-bottom:16px;
+            a {
+                color:#000;
+                font-family:"Museo Sans Rounded", sans-serif;
+                font-size:1.6rem;
+                font-weight:500;
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+}
+
+.partners {
+    .typewrite {
+        color: deepskyblue;
+    }
+    .logo {
+        text-align:center;
+        height:160px;
+        margin-bottom:60px;
+
+        img {
+            width:80%;
+            @include vertical-align();
+        }
+    }
+}
+
+
+
+
+
+/* Build the Animations */
+@keyframes slideUp {
+    from {
+        transform:translate(0px, 300px);
+    }
+    to   {
+        transform:translate(0px, 0px);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform:translate(0px, 300px);
+        opacity:0;
+    }
+    40% {
+        opacity:0;
+    }
+    85% {
+        transform:translate(0px, 0px);
+        opacity:1;
+    }
+}
+
+/* Use the Animations */
+g#dsf {
+    -webkit-animation:fadeUp 1.75s;
+    -moz-animation:fadeUp 1.75s;
+    -ms-animation:fadeUp 1.75s;
+    -o-animation:fadeUp 1.75s;
+    animation:fadeUp 1.75s;
+}
+
+g#GfEr7H {
+    -webkit-animation:slideUp 1.5s;
+    -moz-animation:slideUp 1.5s;
+    -ms-animation:slideUp 1.5s;
+    -o-animation:slideUp 1.5s;
+    animation:slideUp 1.5s;
+}
+
+.box-one {
+    -webkit-animation:fadeUp 1.5s ease ;
+    -moz-animation:fadeUp 1.5s ease ;
+    -ms-animation:fadeUp 1.5s ease ;
+    -o-animation:fadeUp 1.5s ease ;
+    animation:fadeUp 1.5s ease ;
+}
+
+.box-two {
+    -webkit-animation:fadeUp 2.5s ease ;
+    -moz-animation:fadeUp 2.5s ease ;
+    -ms-animation:fadeUp 2.5s ease ;
+    -o-animation:fadeUp 2.5s ease ;
+    animation:fadeUp 2.5s ease ;
+}
+
+.box-three {
+    -webkit-animation:fadeUp 3s ease ;
+    -moz-animation:fadeUp 3s ease ;
+    -ms-animation:fadeUp 3s ease ;
+    -o-animation:fadeUp 3s ease ;
+    animation:fadeUp 3s ease ;
+}
+
+.box-four {
+    -webkit-animation:fadeUp 2s ease ;
+    -moz-animation:fadeUp 2s ease ;
+    -ms-animation:fadeUp 2s ease ;
+    -o-animation:fadeUp 2s ease ;
+    animation:fadeUp 2s ease ;
+}
+
+
+
+.wrap {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
 }
